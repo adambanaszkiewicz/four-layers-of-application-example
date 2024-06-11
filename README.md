@@ -15,12 +15,12 @@
 
 Materiał wideo: https://www.youtube.com/watch?v=K4oeOKtuPBM
 
-- Java: [Infrastructure Layer](https://github.com/adambanaszkiewicz/four-layers-of-application-example/java/src/main/java/pl/adambanaszkiewicz/four_layers_example/infrastructure_layer)
-- PHP: [Infrastructure Layer](https://github.com/adambanaszkiewicz/four-layers-of-application-example/php/src/InfrastructureLayer)
+- Java: [Infrastructure Layer](https://github.com/adambanaszkiewicz/four-layers-of-application-example/tree/master/java/src/main/java/pl/adambanaszkiewicz/four_layers_example/infrastructure_layer)
+- PHP: [Infrastructure Layer](https://github.com/adambanaszkiewicz/four-layers-of-application-example/tree/master/php/src/InfrastructureLayer)
 
 ## Warstwa Domeny
 
-Material wideo: 
+Material wideo : Wkrótce...
 
-- Java: [Domain Layer](https://github.com/adambanaszkiewicz/four-layers-of-application-example/java/src/main/java/pl/adambanaszkiewicz/four_layers_example/domain_layer)
-- PHP: [Domain Layer](https://github.com/adambanaszkiewicz/four-layers-of-application-example/php/src/DomainLayer)
+- Java: [Domain Layer](https://github.com/adambanaszkiewicz/four-layers-of-application-example/tree/master/java/src/main/java/pl/adambanaszkiewicz/four_layers_example/domain_layer)
+- PHP: [Domain Layer](https://github.com/adambanaszkiewicz/four-layers-of-application-example/tree/master/php/src/DomainLayer)
