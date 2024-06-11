@@ -29,9 +29,7 @@ public class BadCartController {
     ) {
         ProductToAdd productToAdd = getProduct(productId);
 
-        Cart cart = cartRepository
-            .findOneByUserId(getCurrentUserId())
-            .orElse(new Cart());
+        Cart cart = cartRepository.findOneByUserId(getCurrentUserId()).orElse(new Cart());
 
         Product product = cart.getProduct(productId);
 
