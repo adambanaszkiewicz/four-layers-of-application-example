@@ -17,11 +17,11 @@ public final class Cart {
             throw new DomainException("This product is unavailable.");
         }
 
-        LineItem productInCart = findLineItem(productToAdd.getId());
+        LineItem lineItemInCart = findLineItem(productToAdd.getId());
 
         int destinationQty;
-        if (productInCart != null) {
-            destinationQty = productInCart.getQty() + qty;
+        if (lineItemInCart != null) {
+            destinationQty = lineItemInCart.getQty() + qty;
         } else {
             destinationQty = qty;
         }
@@ -34,8 +34,8 @@ public final class Cart {
             throw new DomainException(String.format("You cannot buy more than %d pieces.", productToAdd.getMaxProductsToBuy()));
         }
 
-        if (productInCart != null) {
-            productInCart.setQty(destinationQty);
+        if (lineItemInCart != null) {
+            lineItemInCart.setQty(destinationQty);
         } else {
             lineItems.add(new LineItem(productToAdd.getId(), qty));
         }

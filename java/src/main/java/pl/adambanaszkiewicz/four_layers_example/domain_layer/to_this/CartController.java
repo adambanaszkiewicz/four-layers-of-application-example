@@ -40,10 +40,11 @@ public class CartController {
         int stock = 10;
 
         /**
-         * To simplify code, create DTO directly. In real world we would
+         * To simplify code, create DTO directly here. In real world we would
          * need to fetch product from database, and create ProductDTO instance.
          * ProductDTO is here as a bridge between data from source
          * (database or external module) and our Domain in this module.
+         * We could use separate Service to fetch this DTO.
          */
         return new ProductDTO(productId, true, stock, maxProductsToBuy);
     }
