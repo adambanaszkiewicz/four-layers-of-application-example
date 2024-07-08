@@ -20,7 +20,7 @@ Materiał wideo: https://www.youtube.com/watch?v=K4oeOKtuPBM
 
 ## Warstwa Domeny
 
-Material wideo : Wkrótce...
+Material wideo: https://www.youtube.com/watch?v=OAmavB1bFho
 
 - Java: [Domain Layer](https://github.com/adambanaszkiewicz/four-layers-of-application-example/tree/master/java/src/main/java/pl/adambanaszkiewicz/four_layers_example/domain_layer)
 - PHP: [Domain Layer](https://github.com/adambanaszkiewicz/four-layers-of-application-example/tree/master/php/src/DomainLayer)
