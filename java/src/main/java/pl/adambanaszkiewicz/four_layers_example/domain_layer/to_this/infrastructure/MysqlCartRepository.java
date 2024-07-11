@@ -4,7 +4,7 @@ import org.springframework.stereotype.Repository;
 import pl.adambanaszkiewicz.four_layers_example.domain_layer.to_this.domain.Cart;
 import pl.adambanaszkiewicz.four_layers_example.domain_layer.to_this.domain.CartRepositoryInterface;
 
-@Repository
+@Repository("DomainLayerToThisCartRepository")
 public class MysqlCartRepository implements CartRepositoryInterface {
 
     @Override

@@ -12,9 +12,9 @@ import java.util.Map;
 
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 
-@RestController
-@RequestMapping("/from-this/cart")
-public class BadCartController {
+@RestController("DomainLayerFromThisCartController")
+@RequestMapping("/domain-layer/from-this/cart")
+public class CartController {
 
     @Autowired
     private CartRepository cartRepository;
