@@ -1,4 +1,4 @@
-package pl.adambanaszkiewicz.four_layers_example.application_layer.to_this.application.query;
+package pl.adambanaszkiewicz.four_layers_example.user_interface_layer.to_this.application.query;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-@Service("ApplicationLayerToThisGetCartContents")
+@Service("UserInterfaceLayerToThisGetCartContents")
 public class GetCartContents {
     private final JdbcTemplate jdbcTemplate;
 

@@ -1,21 +1,21 @@
-package pl.adambanaszkiewicz.four_layers_example.application_layer.to_this.application.usecase;
+package pl.adambanaszkiewicz.four_layers_example.user_interface_layer.from_this.application.usecase;
 
-import pl.adambanaszkiewicz.four_layers_example.application_layer.to_this.domain.CartRepositoryInterface;
-import pl.adambanaszkiewicz.four_layers_example.application_layer.to_this.domain.Cart;
-import pl.adambanaszkiewicz.four_layers_example.application_layer.to_this.domain.ProductDTO;
-import pl.adambanaszkiewicz.four_layers_example.application_layer.to_this.domain.DomainException;
+import pl.adambanaszkiewicz.four_layers_example.user_interface_layer.from_this.domain.CartRepositoryInterface;
+import pl.adambanaszkiewicz.four_layers_example.user_interface_layer.from_this.domain.Cart;
+import pl.adambanaszkiewicz.four_layers_example.user_interface_layer.from_this.domain.ProductDTO;
+import pl.adambanaszkiewicz.four_layers_example.user_interface_layer.from_this.domain.DomainException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.stereotype.Service;
 
-@Service("ApplicationLayerToThisAddProductToCart")
+@Service
 public class AddProductToCart {
     private final CartRepositoryInterface repository;
 
     @Autowired
     public AddProductToCart(
-        @Qualifier("ApplicationLayerToThisCartRepository") CartRepositoryInterface repository
+        @Qualifier("UserInterfaceLayerFromThisCartRepository") CartRepositoryInterface repository
     ) {
         this.repository = repository;
     }

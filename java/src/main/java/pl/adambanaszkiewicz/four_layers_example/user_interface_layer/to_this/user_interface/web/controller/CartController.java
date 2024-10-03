@@ -1,8 +1,8 @@
-package pl.adambanaszkiewicz.four_layers_example.application_layer.to_this;
+package pl.adambanaszkiewicz.four_layers_example.user_interface_layer.to_this.user_interface.web.controller;
 
-import pl.adambanaszkiewicz.four_layers_example.application_layer.to_this.application.usecase.AddProductToCart;
-import pl.adambanaszkiewicz.four_layers_example.application_layer.to_this.application.query.GetCartContents;
-import pl.adambanaszkiewicz.four_layers_example.application_layer.to_this.domain.DomainException;
+import pl.adambanaszkiewicz.four_layers_example.user_interface_layer.to_this.application.usecase.AddProductToCart;
+import pl.adambanaszkiewicz.four_layers_example.user_interface_layer.to_this.application.query.GetCartContents;
+import pl.adambanaszkiewicz.four_layers_example.user_interface_layer.to_this.domain.DomainException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,8 +11,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.List;
 
-@RestController("ApplicationLayerToThisCartController")
-@RequestMapping("/application-layer/to-this/cart")
+@RestController("UserInterfaceLayerToThisCartController")
+@RequestMapping("/userinterface-layer/to-this/cart")
 public class CartController {
     private final AddProductToCart addProductToCart;
     private final GetCartContents getCartContents;
