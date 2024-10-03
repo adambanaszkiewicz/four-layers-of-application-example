@@ -27,10 +27,18 @@ public class CartContentsCommand implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        if (args.getNonOptionArgs().contains(COMMAND_NAME)) {
-            List<Map<String, Object>> contents = this.getCartContents.get(args.getOptionValues("userId").get(0));
+        if (!args.getNonOptionArgs().contains(COMMAND_NAME)) {
+            return;
+        }
 
-            // Do whatever you want with `contents`...
+        String userId = args.getOptionValues("userId").get(0);
+
+        List<Map<String, Object>> contents = this.getCartContents.get(userId);
+
+        for (Map<String, Object> product : contents) {
+            String productName = (String) product.get("name");
+
+            System.out.println("Product name: " + productName);
         }
     }
 }

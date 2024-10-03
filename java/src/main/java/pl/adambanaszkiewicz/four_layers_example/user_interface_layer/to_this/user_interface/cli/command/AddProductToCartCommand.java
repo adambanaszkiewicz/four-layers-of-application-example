@@ -27,12 +27,20 @@ public class AddProductToCartCommand implements ApplicationRunner {
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
-        if (args.getNonOptionArgs().contains(COMMAND_NAME)) {
+        if (!args.getNonOptionArgs().contains(COMMAND_NAME)) {
+            return;
+        }
+
+        try {
             this.addProductToCart.execute(
                 args.getOptionValues("productId").get(0),
                 Integer.parseInt(args.getOptionValues("qty").get(0)),
                 args.getOptionValues("userId").get(0)
             );
+
+            System.out.println("Product successfully added to cart");
+        } catch (Exception e) {
+            System.out.println("An error occured during product add: " + e.getMessage());
         }
     }
 }
