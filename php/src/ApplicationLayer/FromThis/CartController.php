@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\DomainLayer\ToThis;
+namespace App\ApplicationLayer\FromThis;
 
-use App\DomainLayer\ToThis\Domain\CartRepositoryInterface;
-use App\DomainLayer\ToThis\Domain\ProductDTO;
+use App\ApplicationLayer\FromThis\Domain\CartRepositoryInterface;
+use App\ApplicationLayer\FromThis\Domain\ProductDTO;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

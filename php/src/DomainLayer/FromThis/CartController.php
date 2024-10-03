@@ -21,7 +21,7 @@ final class CartController extends AbstractController
     public function addToCart(Request $request): Response
     {
         $productId = $request->request->get('productId');
-        $qty = $request->request->get('qty');
+        $qty = (int) $request->request->get('qty');
 
         $productToAdd = $this->getProduct($productId);
         /** @var Cart $cart */
